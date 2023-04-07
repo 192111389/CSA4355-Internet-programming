@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background-color: rgb(172, 239, 172);
+}
+
+h1 {
+  text-align: center;
+  font-style: oblique;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  
+}
+h2{
+    text-align: center;
+    
+}
+h3{
+    text-align: left;
+}
+
+form {
+  margin: 0 auto;
+  width: 50%;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+select, input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color:#45a049;
+}
+    </style>
+  <meta charset="UTF-8">
+  <title>Online Traffic Squad</title>
+</head>
+<body><hr>
+  <header>
+    <h1>Online Traffic Squad</h1>
+    <hr><hr>
+    <nav>
+      <ul>
+        <li><a href="#user-login">User Login</a></li>
+        <li><a href="#police-login">Police Login</a></li>
+        <li><a href="#admin-login">Administrator Login</a></li>
+      </ul>
+    </nav>
+  </header><hr><hr>
+  
+  <!-- User Login Section -->
+  <section id="user-login">
+    <h2>User Login</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      
+      <button type="submit">Log In</button>
+    </form>
+  </section><hr><hr>
+  
+  <!-- Police Login Section -->
+  <section id="police-login">
+    <h2>Police Login</h2>
+    <form>
+      <label for="badge-number">Badge Number:</label>
+      <input type="text" id="badge-number" name="badge-number"><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      
+      <button type="submit">Log In</button>
+    </form>
+  </section><hr><hr>
+  
+  <!-- Administrator Login Section -->
+  <section id="admin-login">
+    <h2>Administrator Login</h2>
+    <form>
+      <label for="admin-username">Username:</label>
+      <input type="text" id="admin-username" name="admin-username"><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      
+      <button type="submit">Log In</button>
+    </form>
+  </section><hr><hr>
+  
+  <!-- User Dashboard Section -->
+  <section id="user-dashboard">
+    <h3>Welcome, [Username]</h3>
+    <p>Here, users can access their account information, view their driving history, and pay fines for traffic violations.</p>
+  </section>
+  
+  <!-- Police Dashboard Section -->
+  <section id="police-dashboard">
+    <h3>Welcome, [Badge Number]</h3>
+    <p>Here, police officers can search for vehicle and driver information, log traffic violations, and issue fines.</p>
+  </section>
+  
+  <!-- Administrator Dashboard Section -->
+  <section id="admin-dashboard">
+    <h3>Welcome, [Administrator Username]</h3>
+    <p>Here, administrators can manage the system, view statistics, and add or remove users and police officers.</p>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Online Traffic Squad</p>
+  </footer><hr>
+</body>
+</html>
